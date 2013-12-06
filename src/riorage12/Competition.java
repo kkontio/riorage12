@@ -19,7 +19,7 @@ public class Competition {
     public static void main(String[] args) {
         if (args.length != 3) {
             System.out.println("Invalid arguments.");
-            System.exit(0);
+            System.exit(1);
         }
         
         //data set path is given by the start.sh script as the first parameter
@@ -31,7 +31,7 @@ public class Competition {
             reader = new Scanner(file);
         } catch (Exception e) {
             System.out.println("File not found.");
-            System.exit(0);
+            System.exit(1);
         }
         
         //number of threads is given by the start.sh as the third parameter
@@ -39,7 +39,7 @@ public class Competition {
             threads = Integer.parseInt(args[2]);
         } catch (Exception e) {
             System.out.println("Given number of threads is not an integer.");
-            System.exit(0);
+            System.exit(1);
         }
         
         try {
@@ -61,7 +61,7 @@ public class Competition {
             System.out.println("done.");
         } catch (Exception e) {
             System.out.println("Malformed dataset.");
-            System.exit(0);
+            System.exit(1);
         }
         //output file is given by the start.sh as the second parameter
         game.setOutput_file(args[1]);

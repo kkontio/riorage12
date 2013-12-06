@@ -194,7 +194,7 @@ public class Gol {
             System.out.println("done.");
         } catch (IOException e) {
             System.out.println("cannot create file.");
-            System.exit(0);
+            System.exit(1);
         }
         System.out.println("Bye!");
         System.exit(0);
