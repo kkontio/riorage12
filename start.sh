@@ -1,15 +1,15 @@
 #!/bin/bash
-DEFAULT_INPUT="/home/fs/kerola/rio_testdata/life_800_10000.txt"
-DEFAULT_OUTPUT="/tmp/life_results.txt"
+DEFAULT_INPUT="./datasets/life_800_10000.txt"
+DEFAULT_OUTPUT="./tmp/life_results.txt"
 DEFAULT_THREADS="0"
 input=$DEFAULT_INPUT
 output=$DEFAULT_OUTPUT
 threads=$DEFAULT_THREADS
 
-# First argument given is the location of the input file, the second
+# First parameter given is the location of the input file, the second
 # is the location and filename of the desired output file, third one
 # is the number of threads to be used.
-# If no arguments are provided, the defaults are used.
+# If no parameters are provided, the defaults are used.
 
 print_help() {
         echo "Usage: `basename $0` -i input -o output -t num_of_threads"

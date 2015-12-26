@@ -17,3 +17,6 @@ nb-configuration.xml
 *.jar
 *.war
 *.ear
+
+# tmp
+tmp/life_results.txt
