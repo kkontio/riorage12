@@ -74,10 +74,10 @@ public class GolWorker implements Runnable {
             try {
                 this.game.barrier.await();
             } catch (InterruptedException ex) {
-                System.out.println('Worker thread interrupted. Exiting thread.');
+                System.out.println("Worker thread interrupted. Exiting thread.");
                 return;
             } catch (BrokenBarrierException ex) {
-                System.out.println('Unexpected sync barrier breakdown. Exiting thread.');
+                System.out.println("Unexpected sync barrier breakdown. Exiting thread.");
                 return;
             }
         }
